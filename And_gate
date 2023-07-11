@@ -1,0 +1,16 @@
+module AND(
+  input a, b,
+  output reg y); //module name and port list
+  
+  always@(*)   // always block 
+    begin
+      if(a == 1'b1 && b == 1'b1)  //if a and b is one then y is 1.
+        begin
+          y = 1'b1;
+        end
+      else                       // else y is 0.
+        begin
+          y = 1'b0;
+        end
+    end
+endmodule
